@@ -1,0 +1,367 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,cyrillic-ext);
+@font-face {
+  font-family: 'blackjack';
+  src: url('../fonts/black_jack.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Journal';
+  src: url('../fonts/journal.ttf') format('truetype');
+}
+
+$main-link-color: #f03838;
+$main-link-hover: #424242;
+$main-color: #424242;
+$main-font: "Open Sans", sans-serif;
+$white: #fff;
+$gray: #656565;
+$border-color: #e3e3e3;
+$header-color: #cf4646;
+
+/* Reset */
+*{  
+  vertical-align: baseline;      
+  font-size: 100%;  
+  border: none;  
+  padding: 0;  
+  margin: 0;  
+}
+
+body {
+  padding: 0px; 
+  font-size: 16px; 
+  font-family: $main-font;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
+/**** Header *****/
+.header {
+  background: $header-color;
+  color: $white;
+
+  .logo {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 3em;
+      font-style: italic;
+      position: relative;
+      text-shadow: 1px 1px 9px rgba(0,0,0,0.25);
+      font-family: 'Journal';
+
+      span {
+        position: absolute;
+        right: -2.4em;
+        top: 0;
+        font-size: 0.5em;
+        font-style: normal;
+        font-family: 'blackjack';
+      }
+    }
+  }
+
+  .search {
+    display: inline-block;
+    width: 74%;
+    vertical-align: center;
+
+    input {
+      border-radius: 7px;
+      box-shadow: 1px 1px 9px rgba(0,0,0,0.25);
+      color: $main-color;
+      padding: 5px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+         color:    $main-color;
+         opacity:  0.8;
+      }
+
+    }
+  }
+}
+/* Menu */
+nav {
+  a {
+    color: $main-color;
+    text-decoration: none;
+    transition: color .2s ease;
+    font-size: 1em;
+    margin-left: 15px;
+    &:hover {
+      text-decoration: none;
+      color: $main-link-color;
+    }
+  }
+}
+/** Content */
+
+.content{
+  a {
+  color: $main-link-color;
+  transition: color .2s ease;
+  text-decoration: none;
+    &:hover {
+      color: $main-link-hover;
+
+      img {
+        transition: opacity .2s ease;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .time {
+    font-size: .8em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .comments {
+    background: url('../images/arr-bubble.png') no-repeat 50% 100%;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    display: inline-block;
+    height: 26px;
+    vertical-align: middle;
+
+    a {
+      color: $white;
+      background: #000;
+      font-size: 0.8em;
+      height: 16px;
+      padding: 1px 7px;
+      text-decoration: none;
+    }
+  }
+
+  .tags {
+    a {
+      font-size: 0.9em;
+      padding: 2px 4px;
+      margin-right: 2px;
+      transition: all .2s ease;
+      text-decoration: none;
+
+      &:hover {
+        background: $header-color;
+        color: $white;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+      }
+    }
+  }
+
+  article {
+    padding: 10px;
+    border-top: 1px solid $border-color;
+    position: relative;
+
+    .featured {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 3px 5px;
+      background: $header-color;
+      color: $white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+      font-size: 1.5em;
+      a {
+        color: $main-color;
+        text-decoration: none;
+        &:hover {
+          color: $main-link-color;
+        }
+      }
+    }
+
+    .img {
+      padding: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .action {
+      padding: 10px 0;
+
+      .left-half {
+        width: 50%;
+        float: left;
+      }
+      .right-half {
+        width: 50%;
+        float: right;
+      }
+
+      .next {
+        text-decoration: none;
+        background: $border-color;
+        color: $main-color;
+        padding: 5px 5px 5px 5px;
+        transition: all .2s ease;
+        font-size: 0.7em;
+
+        &:hover {
+          color: $white;
+          background: #616161;
+        }
+      }
+    }
+  }
+
+  .paginator {
+    li {
+      float: left;
+      transition: all .2s ease;
+
+      &:hover {
+          background: $header-color;
+          a {
+            background: $header-color;
+            color: $white;
+            box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+            text-shadow: 1px 1px 3px rgba(0,0,0,.25);
+          }
+        }
+
+      a {
+        color: $main-link-color;
+        border: transparent;
+        transition: all .2s ease;
+      }
+    }
+    li.active {
+      a {
+        background: $header-color;
+        color: $white;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+        text-shadow: 1px 1px 3px rgba(0,0,0,.25);
+      }
+      
+    }
+  }
+
+  .widget {
+    padding: 5px;
+
+    h3 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .topic {
+      border-top: 1px solid $border-color;
+      h4 {
+        a {
+          color: $main-color;
+          font-size: 1em;
+          text-decoration: none;
+          &:hover {
+            color: $main-link-color;
+          }
+        }
+      }
+
+      .left-half {
+        float: left;
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .right-half {
+        width: 58%;
+        margin-left: 45%;
+      }
+    }
+  }
+  .calendar {
+    width: 100%;
+
+    a {
+      color: $main-color;
+      font-size: 0.8em;
+      text-decoration: none;
+      transition: all .2s ease;
+      padding: 3px 7px;
+
+      &:hover {
+        color: $white;
+        background: $header-color;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
+        box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+      }
+    }
+    td.weekend a {
+      color: $main-link-color;
+      &:hover {
+        color: $white;
+      }
+    }
+
+    td.active {
+      a {
+        color: $white;
+        background: $header-color;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
+        box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+      }
+    }
+  }
+
+  .page {
+    padding: 5px;
+    border-bottom: 1px solid $border-color;
+
+    .time-container {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 5px;
+      margin-top: -30px;
+    }
+
+    .img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .tags {
+      margin:10px 0;
+    }
+
+    .content {
+      font-size: 0.9em;
+      line-height: 1.7em;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #303030;
+  color: $gray;
+  padding: 20px 0;
+
+  span {
+    font-style: italic;
+  }
+}
