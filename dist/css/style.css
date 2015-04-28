@@ -8276,7 +8276,7 @@ nav a:hover {
 }
 
 .content article {
-  padding: 10px;
+  margin: 10px 0;
   border-top: 1px solid #e3e3e3;
   position: relative;
 }
@@ -8289,6 +8289,10 @@ nav a:hover {
   background: #cf4646;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.content article .featured + h2 {
+  margin-top: 30px;
 }
 
 .content article h2 {
@@ -8305,7 +8309,7 @@ nav a:hover {
 }
 
 .content article .img {
-  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .content article .img img {
@@ -8445,7 +8449,6 @@ nav a:hover {
 }
 
 .content .page {
-  padding: 5px;
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -8470,6 +8473,7 @@ nav a:hover {
 
 .content .page .content img {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .footer {
