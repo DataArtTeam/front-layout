@@ -165,7 +165,7 @@ nav {
   }
 
   article {
-    padding: 10px;
+    margin: 10px 0;
     border-top: 1px solid $border-color;
     position: relative;
 
@@ -177,6 +177,9 @@ nav {
       background: $header-color;
       color: $white;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+      & + h2 {
+        margin-top: 30px;
+      }
     }
 
     h2 {
@@ -191,7 +194,7 @@ nav {
     }
 
     .img {
-      padding: 10px;
+      margin-bottom: 5px;
 
       img {
         width: 100%;
@@ -327,7 +330,6 @@ nav {
   }
 
   .page {
-    padding: 5px;
     border-bottom: 1px solid $border-color;
 
     .time-container {
@@ -351,6 +353,7 @@ nav {
       line-height: 1.7em;
       img {
         max-width: 100%;
+        margin-bottom: 10px;
       }
     }
   }
