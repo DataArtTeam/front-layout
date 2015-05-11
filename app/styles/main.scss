@@ -294,6 +294,18 @@ nav {
         margin-left: 45%;
       }
     }
+    .tags-block {
+      a {
+        display: inline-block;
+        &.rate-1 {
+          font-size: 0.8em;
+        }
+        &.rate-3 {
+          font-size: 1.2em;
+        }
+      }
+
+    }
   }
   .calendar {
     width: 100%;
@@ -332,10 +344,25 @@ nav {
   .page {
     border-bottom: 1px solid $border-color;
 
-    .time-container {
+    .about-container {
       border-bottom: 1px solid $border-color;
       padding-bottom: 5px;
-      margin-top: -30px;
+      margin-top: -15px;
+      div {
+        display: inline-block;
+      }
+      .author {
+        width: 48%;
+        font-size: 0.9em;
+      }
+      .time {
+        width: 40%;
+        text-align: right;
+      }
+      .comments-container {
+        width: 10%;
+        text-align: right;
+      }
     }
 
     .img {
