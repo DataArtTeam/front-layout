@@ -8144,6 +8144,7 @@ ul {
   display: inline-block;
   width: 25%;
   vertical-align: middle;
+  margin: 10px;
 }
 
 .header .logo a {
