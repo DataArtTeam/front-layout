@@ -11,7 +11,7 @@
 
     <link id="header_template" rel="import" href="templates/header_template.html">
     <link id="footer_template" rel="import" href="templates/footer_template.html">
-    <link id="content_page" rel="import" href="templates/content_page.html">
+    <link id="content_page" rel="import" href="templates/content_page_main_materials.html">
 
 </head>
 <body>
@@ -26,7 +26,7 @@
 <script>
     var link = document.querySelector('#content_page');
     var content = link.import;
-    var el = content.querySelector('#content_admin');
+    var el = content.querySelector('#content_page_main_materials');
     document.body.appendChild(el.cloneNode(true));
 </script>
 <script>
