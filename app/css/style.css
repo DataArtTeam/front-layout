@@ -8517,3 +8517,21 @@ nav a:hover {
 .footer span {
   font-style: italic;
 }
+
+#content_login {
+  margin-bottom: 125px;
+}
+
+#content_login {
+  margin-top: 100px;
+}
+
+.input-block-level {
+  margin-left: 10px;
+  min-width: 230px
+}
+
+.checkbox {
+  margin-left: 25px;
+}
+
