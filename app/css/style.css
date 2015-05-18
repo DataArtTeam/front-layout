@@ -8535,6 +8535,18 @@ nav a:hover {
   margin-left: 25px;
 }
 
-.span6 {
-  margin-left: 0px;
+.select-role {
+  margin-left: 10px;
+}
+
+#content_add_new_user {
+  margin-bottom: 125px;
+}
+
+#content_add_new_user {
+  margin-top: 100px;
+}
+
+.form-signin-heading {
+  text-align:  center;
 }
