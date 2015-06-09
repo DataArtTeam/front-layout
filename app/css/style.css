@@ -8558,3 +8558,14 @@ nav a:hover {
 #content_registration {
   margin-top: 10px;
 }
+#content_user_role {
+  margin-bottom: 100px;
+}
+
+#content_user_role {
+  margin-top: 125px;
+}
+.select-role {
+  margin-left: 10px;
+  min-width: 240px
+}
