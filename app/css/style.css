@@ -8563,9 +8563,33 @@ nav a:hover {
 }
 
 #content_user_role {
-  margin-top: 165px;
+  margin-top: 105px;
 }
 .select-role {
   margin-left: 10px;
   min-width: 240px
+}
+#content_forgetpassword {
+  margin-bottom: 125px;
+}
+
+#content_forgetpassword {
+  margin-top: 100px;
+}
+#content_404error {
+  margin-bottom: 215px;
+}
+
+#content_404error {
+  margin-top: 100px;
+}
+#content_tags {
+  margin-bottom: 95px;
+}
+
+#content_tags {
+  margin-top: 90px;
+}
+.form-signin-heading {
+  text-align: center;
 }
