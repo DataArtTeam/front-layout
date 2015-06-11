@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle team</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+
+    <link id="header_template" rel="import" href="templates/header_template.html">
+    <link id="footer_template" rel="import" href="templates/footer_template.html">
+    <link id="content_add_article" rel="import" href="templates/content_add_article.html">
+
+</head>
+<body>
+<script>
+    var link = document.querySelector('#header_template');
+    var content = link.import;
+    var el = content.querySelector('.header');
+    document.body.appendChild(el.cloneNode(true));
+</script>
+
+
+<script>
+    var link = document.querySelector('#content_add_article');
+    var content = link.import;
+    var el = content.querySelector('#content_add_article');
+    document.body.appendChild(el.cloneNode(true));
+</script>
+<script>
+    var link = document.querySelector('#footer_template');
+    var content = link.import;
+    var el = content.querySelector('.footer');
+    document.body.appendChild(el.cloneNode(true));
+</script>
+</body>
+</html>
